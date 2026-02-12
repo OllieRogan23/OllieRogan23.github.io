@@ -1,0 +1,89 @@
+body {
+    background: #084B83;
+    color: rgb(45, 45, 45);
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    
+}
+
+#all-contents {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* navigation menu */
+nav {
+    background: #BBE6E4;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    border-radius:10px; 
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    color: black;
+    flex: 1;
+    margin: 0;
+    
+}
+
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* main container area beneath menu */
+main {
+    background:#42BFDD;
+    display: flex;
+    margin-top: 20px;
+    border-radius:10px; 
+}
+
+.sidebar {
+    margin-right: 25px;
+    padding: 10px;
+    
+}
+#image-text{
+    margin: 6px;
+}
+.sidebar-img {
+    width: 400px;
+    border: 8px solid #233f8f ;
+    border-radius: 10px
+}
+
+.content {
+    flex: 1;
+    padding: 15px;
+   
+}
+
+/* interests section styles */
+#interests {
+    border: 8px #F0F6F6;
+    padding: 8px;
+    margin-top: 20px;
+    border-style: dotted;
+    border-radius:10px;
+
+}
+
+h2, h3 {
+    margin: 0px;
+}
