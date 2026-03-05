@@ -3,10 +3,14 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+  background-image: url(images/lustukbg.png);
   margin: 20px;
 }
 
 img {
   display: none;
+}
+p{
+  margin: 40px;
+  font-size: 50px;
 }
