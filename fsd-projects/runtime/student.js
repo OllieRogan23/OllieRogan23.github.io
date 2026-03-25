@@ -1,5 +1,8 @@
 function moveScenery() {
-  // TODO 2: Move background scenery based on current level speed
+for (initialization; condition; final-expression) {
+  // code block to be executed
+}
+
 }
 
 function generateLevel() {
