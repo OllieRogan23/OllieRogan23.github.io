@@ -22,6 +22,15 @@ var init = function (window) {
 
     // TODO 2 : Create a function that draws a circle
     function drawCircle() {
+      // Initialize gamification features (unlocked after completing educational TODOs)
+      Gamification.init({
+        canvas: canvas,
+        view: view,
+        draw: draw,
+        physikz: physikz,
+        circles: circles,
+        game: game,
+      });
       circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
       physikz.addRandomVelocity(circle, canvas, 5, 5);
       view.addChild(circle);
@@ -29,7 +38,7 @@ var init = function (window) {
     }
 
     // TODO 3 : Call the drawCircle() function
-    for (var i = 0; i < 500; i++) {
+    for (var i = 0; i < 100; i++) {
       drawCircle();
     }
 
@@ -45,6 +54,8 @@ var init = function (window) {
         and check to see if it has drifted off the screen.         
         */
     function update() {
+      // Update gamification features each frame
+      Gamification.update();
       for (var i = 0; i < circles.length; i++) {
         physikz.updatePosition(circles[i]);
         game.checkCirclePosition(circles[i]);
