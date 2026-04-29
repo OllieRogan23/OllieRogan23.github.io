@@ -1,16 +1,17 @@
 function moveScenery() {
-for (var i = 0; i < scenery.building.instances.length; i++){
-buildingInstance = scenery.building.instances[i];
-buildingInstance.x += (scenery.building.instances.speedX + currentLevel.speed)
-if (buildingInstance.x + scenery.building.instances.width < 0){
-
-}
-}
-for (var i = 0; i < scenery.lamp.instances.length; i++){
-lampInstance = scenery.lamp.instances[i];
-lampInstance.x += (scenery.lamp.instances.speedX + currentLevel.speed)
-}
-
+  for (var i = 0; i < scenery.building.instances.length; i++) {
+    buildingInstance = scenery.building.instances[i];
+    buildingInstance.x +=
+      scenery.building.instances.speedX + currentLevel.speed;
+    if (buildingInstance.x + scenery.building.instances.width < 0) {
+      //reset building make it loop around the screen
+      buildingInstance.x = canvas.width;
+    }
+  }
+  for (var i = 0; i < scenery.lamp.instances.length; i++) {
+    lampInstance = scenery.lamp.instances[i];
+    lampInstance.x += scenery.lamp.instances.speedX + currentLevel.speed;
+  }
 }
 
 function generateLevel() {
